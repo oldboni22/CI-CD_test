@@ -10,6 +10,6 @@ public class Tests
         int a = 1;
         await Task.Delay(100);
         
-        Assert.Equal(a,1);
+        Assert.Equal(1,a);
     }
 }
