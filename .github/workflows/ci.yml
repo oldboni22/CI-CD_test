@@ -28,7 +28,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Install test adapter
-      run: dotnet add package NUnitTestAdapter
+      run: dotnet package add NUnitTestAdapter --project Tests/Tests.csproj
       
     - name: Build
       run: dotnet build --no-restore
