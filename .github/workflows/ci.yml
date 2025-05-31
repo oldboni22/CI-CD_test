@@ -27,7 +27,7 @@ jobs:
 
     - name: Install test adapter
       run: |
-        dotnet add package xunit.runner.visualstudio
+        dotnet add package xunit.runner.visualstudio --project Tests/Tests.csproj --no-restore
         
     - name: Restore dependencies
       run: dotnet restore
