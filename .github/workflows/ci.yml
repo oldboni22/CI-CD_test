@@ -26,7 +26,9 @@ jobs:
         dotnet-version: 9.0.x
 
     - name: Install test adapter
-      run: dotnet add package Microsoft.TestPlatform.ObjectModel --project Tests/Tests.csproj --no-restore
+      run: |
+        dotnet add package MSTest.TestAdapter --project Tests/Tests.csproj --no-restore
+        dotnet add package Microsoft.TestPlatform.ObjectModel --project Tests/Tests.csproj --no-restore
         
     - name: Restore dependencies
       run: dotnet restore
