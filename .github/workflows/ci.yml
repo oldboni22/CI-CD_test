@@ -24,12 +24,13 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
+
+    - name: Install test adapter
+      run: dotnet add package MSTest.TestAdapter --project Tests/Tests.csproj --no-restore
         
     - name: Restore dependencies
       run: dotnet restore
-    - name: Install test adapter
-      run: dotnet package add NUnitTestAdapter --project Tests/Tests.csproj
-      
+
     - name: Build
       run: dotnet build --no-restore
       
