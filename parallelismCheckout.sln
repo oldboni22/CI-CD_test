@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parallelismCheckout", "parallelismCheckout\parallelismCheckout.csproj", "{11F9EB36-E281-4E82-B3A9-62FE3FFC72DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{142A6945-0B32-4E2D-8397-CB90F8884AF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{11F9EB36-E281-4E82-B3A9-62FE3FFC72DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F9EB36-E281-4E82-B3A9-62FE3FFC72DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F9EB36-E281-4E82-B3A9-62FE3FFC72DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142A6945-0B32-4E2D-8397-CB90F8884AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142A6945-0B32-4E2D-8397-CB90F8884AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142A6945-0B32-4E2D-8397-CB90F8884AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142A6945-0B32-4E2D-8397-CB90F8884AF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

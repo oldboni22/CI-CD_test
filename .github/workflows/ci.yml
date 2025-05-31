@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        os: [ubuntu-latest,windows-latest,macOS-latest]
+        os: [windows-latest]
     
     steps:
     - uses: actions/checkout@v4
@@ -24,13 +24,16 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
+
+    - name: Install test adapter
+      run: |
+        dotnet add package xunit.runner.visualstudio --project Tests/Tests.csproj --no-restore
         
     - name: Restore dependencies
       run: dotnet restore
-      
-      
+
     - name: Build
       run: dotnet build --no-restore
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build
